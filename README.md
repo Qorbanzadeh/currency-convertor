@@ -13,7 +13,7 @@ npm install
 ## How to run?
 
 ```bash
-echo YOUR_ACCESS_KEY > .env
+echo FIXERIO_ACCESS_KEY=YOUR_ACCESS_KEY > .env
 
 # yarn
 yarn start
