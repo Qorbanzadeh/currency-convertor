@@ -1,4 +1,4 @@
-# Frontend Developer Test Assignment
+# Frontend Developer Assignment
 
 ## Installation
 
