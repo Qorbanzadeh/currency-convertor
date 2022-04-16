@@ -15,10 +15,10 @@ npm install
 ```bash
 echo YOUR_ACCESS_KEY > .env
 
-# yarn:
+# yarn
 yarn start
 
-# npm:
+# npm
 npm start
 ```
 
