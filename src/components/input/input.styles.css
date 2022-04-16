@@ -1,0 +1,53 @@
+.input-container {
+  position: relative;
+}
+.input-container input {
+  width: 90%;
+  height: 100%;
+  margin: 1rem;
+  border: 2px solid var(--clr-primary);
+  color: var(--clr-white);
+  background-color: transparent;
+  border-radius: var(--radius);
+  outline: none;
+  padding: 0 10px;
+  font-size: 1.25rem;
+}
+
+.input-container label {
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  color: var(--clr-white);
+  text-transform: capitalize;
+  transition: top 0.4s;
+  padding: 0 5px;
+  font-size: 0.9rem;
+  cursor: text;
+}
+
+.input-container input:focus ~ label,
+.input-container input:not(:placeholder-shown) ~ label {
+  top: 9px;
+  background-color: var(--clr-background);
+}
+
+.input-container input:disabled {
+  border-color: var(--clr-disabled);
+}
+
+.input-container input:disabled ~ label {
+  color: var(--clr-disabled);
+}
+
+@media (max-width: 768px) {
+  .input-container {
+    margin: 10px 0;
+  }
+  .input-container input {
+    /* width: 100%; */
+  }
+  .input-container label {
+    font-size: 0.8rem;
+  }
+}

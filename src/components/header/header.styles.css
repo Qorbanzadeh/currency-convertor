@@ -1,0 +1,5 @@
+h1 {
+  color: var(--clr-secondary);
+  margin: 1rem;
+  text-transform: capitalize;
+}

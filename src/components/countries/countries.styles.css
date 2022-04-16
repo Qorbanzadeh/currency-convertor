@@ -1,0 +1,65 @@
+.table-container {
+  width: 90%;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+thead {
+  background-color: var(--clr-secondary);
+}
+
+thead tr th {
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.02rem;
+  padding: 0.75rem;
+  vertical-align: top;
+  border: 1px solid var(--clr-white);
+  color: var(--clr-white);
+}
+
+tbody tr td {
+  font-size: 0.8rem;
+  letter-spacing: 0.02rem;
+  font-weight: 400;
+  padding: 0.5rem;
+  text-align: center;
+  border: 1px solid var(--clr-white);
+}
+
+td img {
+  width: 100px;
+}
+
+table .currency-name {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--clr-red);
+}
+
+table .converted-currency-amount {
+  color: var(--clr-blue);
+}
+
+.empty-list {
+  color: var(--clr-secondary);
+  padding: 1rem;
+}
+
+@media (max-width: 768px) {
+  table thead {
+    display: none;
+  }
+  table,
+  tbody,
+  tr,
+  td {
+    display: block;
+  }
+  table tbody tr {
+    margin: 1rem;
+  }
+}

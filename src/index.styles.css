@@ -1,0 +1,22 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Variables */
+:root {
+  /* Color Variables */
+  --clr-background: #1e272e;
+  --clr-disabled: #808e9b;
+  --clr-primary: #05c46b;
+  --clr-secondary: #ff5e57;
+  --clr-white: #ffffff;
+  --clr-black: #1e272e;
+  --clr-red: #f53b57;
+  --clr-blue: #0fbcf9;
+  /*   border radius */
+  --radius: 0.625rem;
+}

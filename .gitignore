@@ -1,0 +1,18 @@
+# System files
+.DS_*
+
+# Directories
+build
+node_modules
+
+# Editors configs
+.vscode
+.idea
+*.sublime*
+
+# Logs
+*.log
+logs
+
+# Security
+.env
