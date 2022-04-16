@@ -50,6 +50,9 @@ yarn format
 
 ## Notes:
 
+- I've uploaded the project to a [github page](https://qorbanzadeh.github.io/currency-convertor/) but since I can't use it with `https` due to the free plan,
+  browsers will block the endpoint!
+
 - Since I was using the free plan of [fixer.io](https://fixer.io/product), I couldn't change the base currency.
  So, I had to do it manually which is not good if it was a real project.
  Also, the rates would be updated only by refreshing the page since with the [free plan](https://fixer.io/product)
@@ -73,7 +76,7 @@ So, not more than a day, So, if I spend more time on it, it can be improved, the
 - IT's a basic list(table) and I didn't put much time on its UI, So:
  - Defiantly colors can be improved
  - Pagination and skelton loading would make it better(though it's better to do the pagination on the backend side)
- - If it had more components, I would probably use sass instead of pure css!
+ - If it had more components, I would probably use `SCSS` instead of pure css!
 
 - The initial load could be faster if the the endpoint has pagination or
  I could have implement a function to mount more countries when user scroll down.
