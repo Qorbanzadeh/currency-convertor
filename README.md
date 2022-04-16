@@ -13,6 +13,8 @@ npm install
 ## How to run?
 
 ```bash
+echo YOUR_ACCESS_KEY > .env
+
 # yarn:
 yarn start
 
@@ -50,12 +52,14 @@ yarn format
 
 ## Notes:
 
-- I've uploaded the project to a [github page](https://qorbanzadeh.github.io/currency-convertor/) but since I can't use it with `https` due to the free plan,
+- I've emailed the `ACCESS_KEY`, but you can get one from [here][fixerio]. Please put it in a `.env` file, then run the project
+
+- I've uploaded the project to a [github page][gh-page] but since I can't use it with `https` due to the free plan,
   browsers will block the endpoint!
 
-- Since I was using the free plan of [fixer.io](https://fixer.io/product), I couldn't change the base currency.
+- Since I was using the free plan of [fixer.io][fixerio], I couldn't change the base currency.
  So, I had to do it manually which is not good if it was a real project.
- Also, the rates would be updated only by refreshing the page since with the [free plan](https://fixer.io/product)
+ Also, the rates would be updated only by refreshing the page since with the [free plan][fixerio]
  only comes **100** request per month!
 
 - I'm using the `.env` file to access the **API_KEY** but it's defiantly
@@ -65,7 +69,7 @@ yarn format
 
 - For the following reasons I get all of the countries on the initial load:
   - Showing an empty page is not good for the UI
-  - The [search endpoint doesn't function very well](https://restcountries.com/v3.1/name/iran)
+  - The [search endpoint doesn't function very well][rc-api-bug]
   - It wasn't specified in the assignment description how to get the data as long as users can search for countries
 
 ## Things that could be improved
@@ -80,3 +84,9 @@ So, not more than a day, So, if I spend more time on it, it can be improved, the
 
 - The initial load could be faster if the the endpoint has pagination or
  I could have implement a function to mount more countries when user scroll down.
+
+
+<!-- External Links -->
+[fixerio]: https://fixer.io/product
+[gh-page]: https://qorbanzadeh.github.io/currency-convertor/
+[rc-api-bug]: https://restcountries.com/v3.1/name/iran
